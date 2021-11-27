@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+/* body{
+    background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15a9ff, #10428d);
+    background-color: rgb(39, 36, 173);
+    background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+    background-repeat: repeat;
+ 
+} */
+
+/* container Login */
+
+.containerLogin {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cubo {
+    padding: 34px 25px 25px;
+    background: rgba(83, 81, 81, 0.781);
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.h1-cubo {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-cubo .control-cubo{
+    margin: 0 0 24px;
+}
+
+.form-cubo .control-cubo input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+
+.form-cubo .control-cubo input:hover,
+.form-cubo .control-cubo input:focus {
+    outline: none;
+    border: 0;
+}
+
+.form-cubo .btn-cubo {
+    width: 66%;
+    display: block;
+    padding: 14px 16px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.block-cubo {
+    position: relative;
+}
+
+.block-cubo .bg-top-cubo {
+    position: absolute;
+    height: 10px;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+        rgba(56, 0, 125, 1) 33%,
+        rgba(0, 0, 255, 1) 96%
+        );
+    bottom: 100%;
+    left: 5px;
+    right: -5px;
+    transform: skew(-45deg, 0);
+    margin: 0;
+}
+.block-cubo .bg-top-cubo .bg-inner-cubo {
+    bottom: 0;
+}
+.block-cubo .bg-cubo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #020024;
+    background: linear-gradient(90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(56, 9, 125, 1) 33%,
+        rgba(0, 212, 255, 1) 96%
+    );
+}
+.block-cubo .bg-right-cubo {
+    position: absolute;
+    left: 100%;
+    top: -5px;
+    z-index: 0;
+    bottom: 5px;
+    width: 10px;
+    background: #020024;
+    background: rgba(0, 212, 255, 1);
+    transform: skew(0, -45deg);
+}
+.block-cubo .bg-right-cubo .bg-inner-cubo {
+    left: 0;
+}
+
+.block-cubo .bg-cubo .bg-inner-cubo {
+    transition: all 0.2s ease-in-out;
+}
+
+.block-cubo .bg-inner-cubo {
+    background: #212121;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+.block-cubo .text {
+    position: relative;
+    z-index: 2;
+}
+
+.block-input input {
+    position: relative;
+    z-index: 2;
+}
+
+.block-input input:focus ~ .bg-right-cubo .bg-inner-cubo,
+.block-input input:focus ~ .bg-top-cubo .bg-inner-cubo,
+.block-input input:focus ~ .bg-inner-cubo .bg-inner-cubo {
+    top: 100%;
+    background: rgba(20, 151, 3, 0.945);
+}
+
+.block-input .bg-top-cubo,
+.block-input .bg-right-cubo,
+.block-input .bg-cubo {
+    background: rgba(255, 255, 255, 0.5);
+    transition: background 0.2s ease-in-out;
+}
+.block-input .bg-right-cubo .bg-inner-cubo,
+.block-input .bg-top-cubo .bg-inner-cubo{
+    transition: all 0.2s ease-in-out;
+}
+
+.block-input:focus .bg-top-cubo,
+.block-input:hover .bg-top-cubo,
+.block-input:focus .bg-right-cubo,
+.block-input:hover .bg-right-cubo,
+.block-input:focus .bg-cubo,
+.block-input:hover .bg-cubo {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.block-cubo .block-cubo-hover:focus .bg-cubo .bg-inner-cubo .block-cubo-hover:hover .bg-cubo .bg-inner-cubo {
+    top: 100%;
+}

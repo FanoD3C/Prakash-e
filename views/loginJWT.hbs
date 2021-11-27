@@ -1,0 +1,21 @@
+{{!-- aqui tomamos la plantilla que esta en header.hbs --}}
+{{> header title="titulo de Login / es dinamico"}}
+    {{!-- AQUI pintamos desde el servidor el html, el resultado seria, lo que se encuentra en la tura -> app.js --}}
+    <h1> {{ titulo }}</h1>
+    
+    {{!-- este contacto, obtiene los datos desde el servidor app.js, los datos comunmente son enviados como objetos y JSON --}}
+    {{!-- <h2>{{contacto}}</h2> --}}
+
+    {{!-- UTILIZANDO IF CON HBS --}}
+    {{!-- {{#if estado}}
+        <p>{{contacto}}</p>
+        {{else}}
+        <p>NO EXISTE EL SERVICIO</p>
+    {{/if}} --}}
+
+    
+
+    {{> footer footerContacto="este footer esta en contacto.hbs"}}
+
+</body>
+</html>

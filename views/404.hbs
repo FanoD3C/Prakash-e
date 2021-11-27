@@ -1,0 +1,32 @@
+{{!-- aqui tomamos la plantilla que esta en header.hbs --}}
+
+    {{!-- AQUI pintamos desde el servidor el html, el resultado seria, lo que se encuentra en la tura -> app.js --}}
+    {{!-- <h1> {{ titulo }}</h1>
+
+    {{ descripcion}}
+
+</body>
+</html> --}}
+<link rel="stylesheet" href="../public/assets/css/style404.css">
+{{!-- <link rel="icon" type="image/x-icon" href="../assets/img/icon/icon-prakash.png"> --}}
+
+{{> header titutle="404 - PRAKASH"}}
+
+<body>
+    <section class="contenedor404">
+        <div class="notFound">
+            <div class="img">
+                <img src="https://assets.codepen.io/5647096/backToTheHomepage.png" alt="Back to the Homepage"/>
+                <img src="https://assets.codepen.io/5647096/Delorean.png" alt="El Delorean, El Doc y Marti McFly"/>
+            </div>
+            <div class="text">
+                <h1>Error 404</h1>
+                <h2>Pagina no encontrada</h2>
+                <h3>Ir a la pagina inicial?</h3>
+                <a class="a404" href="/" class="yes">YES</a>
+                <a class="a404" href="https://www.youtube.com/watch?v=XmWhghfr88I">NO</a>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+</body>

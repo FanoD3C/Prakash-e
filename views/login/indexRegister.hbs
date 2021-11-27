@@ -1,0 +1,92 @@
+{{>header titutle="Registrarse en Prakash"}}
+<!-- CSS IMPORTADO DE PUBLIC -->
+<link rel="stylesheet" href="../public/assets/css/styleLogin.css">
+<section class="container p-3">
+    <div class="containerLogin">
+        <!-- Fomulario login -->
+        <form action="indexRegister" method="POST" class="form-cubo">
+            <div class="control-cubo">
+                <h1 class="h1-cubo text-white">Registrar Usuario</h1>
+                <p class="text-center font-italic font-weight-bold text-light">Ingresa tus datos</p>
+            </div>
+            <div class="control-cubo block-cubo block-input">
+                <input type="text" name="name" id="name" placeholder="Nombre Completo" required>
+                <div class="bg-top-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="bg-right-cubo">
+                    <div class="bg-inner-cubo"> </div>
+                </div>
+                <div class="bg-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+            </div>
+            <div class="control-cubo block-cubo block-input">
+                <input type="text" name="user" id="user" placeholder="Ingresar Usuario" required>
+                <div class="bg-top-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="bg-right-cubo">
+                    <div class="bg-inner-cubo"> </div>
+                </div>
+                <div class="bg-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+            </div>
+            <div class="control-cubo block-cubo block-input">
+                <input type="password" name="pass" id="pass" placeholder="Ingresar Contraseña" required>
+                <div class="bg-top-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="bg-right-cubo">
+                    <div class="bg-inner-cubo"> </div>
+                </div>
+                <div class="bg-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+            </div>
+            <button class="btn-cubo block-cubo block-cubo-hover" type="submit">
+                <div class="bg-top-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="bg-right-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="bg-cubo">
+                    <div class="bg-inner-cubo"></div>
+                </div>
+                <div class="text">Registrarse</div>
+            </button>
+
+            <div class="text-center text-white mt-3">
+                <label for="">¿ Ya tienes una cuenta ?</label>
+                <a type="button" class="text-warning" href="/login/indexLogin"> Inicia sesion Aqui! </a>
+                <p class="mt-2 mb-2 text-light font-weight-bold ">Prakash Narutal &copy; 2021</p>
+            </div>
+        </form>
+    </div>
+</section>
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   {{#if alert}}
+    <script>
+        Swal.fire({
+            title: '{{alertTitle}}',
+            text: '{{alertMessage}}',
+            icon: 'warning',
+            showConfirmButton: '{{showConfirmButton}}'
+            //posible loop / error
+            //timer: '{{timer}}'
+            //icon: 'success'
+            
+        }).then(()=> {
+                window.location = '/{{ruta}}'
+        })
+        
+
+    </script>
+    {{else}}
+    <p>faltan los datos</p>
+    
+    {{/if}}
+
+{{> footer}}

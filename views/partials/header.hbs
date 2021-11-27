@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="author" content="Fanod3c"/>
+    <meta name="copyright" content="Propietario del copyright"/>
+    <!-- propiedad  name="robots" -> esta propiedad de lso meta permite manejar los bots de los buscadores como google mozilla safari etc., se pueden cambair varias cositas con este robots -->
+    <!-- importante los tags index/noindex y follow/nofollow se pueden usar combinados o solos, para este caso se usaron separados pero podria ser perfectamente asi content="noindex/nofollow" -->
+    <meta name="robots" content="nofollow"/> <!-- nofollow: impedimos que el robot alcence subpaginas del sito o rastrear enlaces -->
+    <meta name="robots" content="noindex"/> <!-- noindex: indicamos al robot que se prohibe al buscador transferior contenidos html a su base de datos -->
+    
+    <!-- este meta hace que el cache no se guarde en el navegador ni en el proxy-->
+    <!-- <meta http-equiv="cache-control" content="no-cache"/> -->
+    <!-- este meta permite borrar el cache guardado en el navegador en un determinado tiempo, el tiempo se define en segundos -->
+    <meta http-equiv="expires" content="2592000"/> <!-- content="2592000" : es el total de segundos que pasan en 30 dias-->
+    <!-- También es posible definir períodos de tiempo o fechas concretas para borrar el cache y el proxy -->
+    <meta http-equiv="expires" content="Sun, 28 Nov 2021 00:00:00 GMT"/>
+    
+    <!-- redirigir el motor de busqueda a una url pre establecida con su respectivo tiempo de vencimiento -->
+    <meta http-equiv="refresh" content="300; url=https://prakash-natural.netlify.app/"/>
+    <!-- Descripcion sensilla del sitio para la busqueda -->
+    <meta name="description" content="Inicio sesion Prakash Natural">
+    <!-- palabras clave para SEO -->
+    <meta name="keywords" content="Inicio de sesion, Prakash Natural, Handlebars"/>
+    <!-- Visa "adaptable" / Recomendado siempre usar los puntos de queibre o breakpoint -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <!-- ESTILOS GENERALES -->
+    {{!-- 404 --}}
+    {{!-- <link rel="stylesheet" href="../assets/css/style404.css"> --}}
+
+    
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+
+     <!-- CSS PATTERNS BIBLIOOTECA -->
+    <link rel="stylesheet" href="../public/assets/css/pattern.min.css">
+
+     <!-- BOOTSTRAP 5 / GRID MIN / FOLDER -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/css/bootstrap-grid.min.css">
+
+    <!-- BOOTSTRAP 5 / GRID css MIN / FOLDER -->
+     <link rel="stylesheet" href="../public/assets/css/bootstrap/css/bootstrap-grid.min.css.map"> 
+
+    <!-- BOOTSTRAP 5 / reboo CSS MIN / FOLDER -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/css/bootstrap-reboot.min.css.map"> 
+
+    <!-- BOOTSTRAP 5 / reboot MIN / FOLDER -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/css/bootstrap-reboot.min.css">
+
+    <!-- BOOTSTRAP 5 / bootstrap MIN / FOLDER -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/css/bootstrap.min.css">
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/boxicon/boxicons.min.css">
+
+    <!-- BOOTRSTRAP ICONS -->
+    <link rel="stylesheet" href="../public/assets/css/bootstrap/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- GOOGLE FONTS / CDN -->
+      <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../public/assets/img/icon/icon-prakash.ico" type="image/x-icon">
+
+    <title>{{titutle}}</title>
+
+
+</head>
+
+<body>
+  
+  
+    <!-- HEADER / NAV version 1-->
+    <!-- navbar-dark = letras del menu desplegable / bg-dark = para el fondo del navegador / navfil para centrar el listado colapsado  -->
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar sticky-top text-uppercase font-weight-bold bg-color-navbar">
+      <a class="navbar-brand" href="#"> 
+          <img src="../public/assets/img/icon/icon-prakash.png" width="30" height="30" style="margin-right: 5px"  class="d-inline-block align-top" alt="">Prakash Natural 
+      </a>
+
+      <!-- BUTTON BURGUER -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre_mi">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../producto">Productos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../galeria">Galeria</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../contacto">Contacto</a>
+          </li>
+
+          <!-- LISTADO COLAPSADO / DROPDOWN LIST -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Carrito de compras
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul> 
+        <!-- BUSCADOR EN EL NAV -->
+        {{!-- <form class="form-inline my-2 my-lg-0 m-2">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar FRONT" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form> --}}
+        <a href="../login/indexLogin" class="btn btn-primary m-2" role="button" aria-pressed="true">INICIAR SESION</a>
+ 
+
+      </div>
+    </nav>  
+    <!-- fin HEADER / NAV VERSION 1 -->
+</body>

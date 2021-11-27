@@ -1,0 +1,463 @@
+/**** IMPORTANTE ****  
+
+  © DERECHOS DE AUTOR © 
+
+**** IMPORTANTE **** */
+
+
+/*  **** INFORMACION DE DERECHOS DE AUTOR © AUTOR: @FanoD3c ->Buscame en Instagram
+    AUTOR INICIAL: @FanoD3c / Estefano Delgado
+    DESARROLLADOR-IN: "<TU NOMBRE AQUI>"
+    GITHUBLINK: https://github.com/FanoD3C / <"TU GITHUB LINK AQUI">
+    CONTACTO: fanodev310@gmail.com /  <"TU CORREO DE CONTACTO AQUI">
+    INSTAGRAM: FanoD3c / <"TUS REDES SOCIALES AQUI">
+    INVITAME UN CAFE: "Proximamente"
+
+    **** NO BORRAR DESCRIPCION / NO DELETE DESC ****
+    DERECHOS DE AUTOR: Esta plantilla fue desarrollada por Estefano Delgado, Desarrollador web, 
+    apasionado por el open source y modelados 3D, es por esos motivos que esta plantilla esta 
+    habilitada para uso no-comercial como comercial, dependende del desarrollador, siempre y 
+    cuando se de creditos al desarrollador inicial en este caso "Estefano Delgado", sino puedes tener problemas legales, para evitarte esos problemas, no te cuesta 
+    nada darme uuna parte de los creditos, por usar mi plantilla, no sabes cuanto me ayuda que 
+    me des un reconocimiento, te agradezco de corazon y de esta forma me motivas hacer mas 
+    plantillas open source. 
+    
+    PARA MAS INSFORMACION VISITA MI SITIO WEB QUE SIEMPRE ESTA EN CONSTRUCCION DESDE AGOSTO DEL 2021
+    SITIO WEB: https://fanod3c.netlify.app/
+
+    
+    ©FanoD3c Habilita que el desarrollador que desee usar esta plantilla para fines comerciales y 
+    no comerciales lo pueda usar para su determinado fin, yo Estefano Delgando (FanoD3c) 
+    no me hago responsable por la distribucion que se le haga esta plantilla por desarrolladores externos(terceros u otros.).
+    
+*/
+
+/* BOOTRSTRAP ICONS / CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+/* VARIABLE CSS */
+:root{
+    /* COLORES DEL SITIO */
+    --n1-color-PR: #3574b2;
+    --n1-color-alt-PR: #162c43;
+    --n2-color-PR: #2a7c9a;
+    --n2-color-alt-PR: #143c3a;
+    --n3-color-PR: #3aa49f;
+    --n3-color-alt-PR: #076b76;
+    --n4-color-PR: #48c176;
+    --n4-color-alt-PR: #245b32;
+    --n5-color-PR: #acce38;
+    --n5-color-alt-PR: #6c7c21;
+    --n6-color-PR: #bf3c40;
+    --n6-color-alt-PR: #88324b;
+   
+  /* COLOR NAVBAR */
+    --n1-color-nabvar: rgba(0, 99, 112, 0.918);
+
+  /* COLOR BACKGROUND CONTACTOS  */
+
+    --n1-color-transparent: rgba(0, 0, 0, 0.459);
+}
+
+/* Pattern */
+/* body background version 1 */
+/* GENERERALES CSS */
+/* body {
+    margin: 2%;
+    padding: 1%;
+    text-align: center;
+    background:
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+    background-color:#63773F;
+    background-size:100px 100px;
+} */
+ 
+/* body background version 2 */
+body {
+    background-color: var(--n1-color-alt-PR);
+    background-image:
+    radial-gradient(circle at 100% 150%, var(--n1-color-PR) 25%, var(--n1-color-alt-PR) 25%, var(--n2-color-PR) 30%, var(--n2-color-alt-PR) 30%, var(--n3-color-PR) 40%, var(--n3-color-alt-PR) 45%, white 50%, transparent 60%, transparent),
+    radial-gradient(circle at 0    150%, var(--n1-color-PR) 25%, var(--n1-color-alt-PR) 25%, var(--n2-color-PR) 30%, var(--n2-color-alt-PR) 30%, var(--n3-color-PR) 40%, var(--n3-color-alt-PR) 45%, white 50%, transparent 60%, transparent),
+    radial-gradient(circle at 50%  100%, var(--n1-color-alt-PR) 10%, var(--n2-color-alt-PR) 15%, var(--n3-color-alt-PR) 20%, var(--n4-color-PR) 25% , var(--n5-color-alt-PR) 30%, var(--n6-color-PR) 35%, var(--n6-color-alt-PR) 40%, var(--n1-color-PR) 45%, var(--n2-color-PR) 50%, var(--n3-color-PR) 55%, var(--n4-color-PR) 60%, var(--n5-color-PR) 65%, var(--n6-color-PR) 75%,  transparent 95%, transparent),
+    radial-gradient(circle at 100% 50%, var(--n1-color-PR) 25%, var(--n1-color-alt-PR) 25%, var(--n2-color-PR) 30%, var(--n2-color-alt-PR) 30%, var(--n3-color-PR) 40%, var(--n3-color-alt-PR) 45%, white 50%, transparent 60%, transparent),
+    radial-gradient(circle at 0    50%, var(--n1-color-PR) 25%, var(--n1-color-alt-PR) 25%, var(--n2-color-PR) 30%, var(--n2-color-alt-PR) 30%, var(--n3-color-PR) 40%, var(--n3-color-alt-PR) 45%, white 50%, transparent 60%, transparent);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* FIN GENEREALES CSS */
+
+/* HEADER VERSION 2 */
+/* FIN HEADER VERSION*/
+
+
+/* CSS REUSABLE */
+/* PROPIEDADES DE LAS SECCIONES */
+.section {
+    max-width: 100%;
+}
+
+/* PROPIEDADES DEL CONTENEDOR */
+.content {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+}
+/* CONTAINER H1 */
+.container h1 {
+    text-transform:uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-orientation: sideways-right;
+    color: rgb(0, 0, 0);
+}
+
+/* CONTAINER + H2 */
+/* pagina: index.html#sobre_mi */
+.container h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.container h2 {
+    margin: 3% 3px 3% 3%;
+    color: rgb(0, 0, 0);
+}
+
+/* CONTAINER-FLUID + H1 */
+/* pagina: contacto */
+.container-fluid h1 {
+    margin: 3% 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-fluid h2 {
+    padding-bottom: 1%;
+}
+.container-fluid h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-fluid .subtitle-form{
+    font-style: italic;
+    text-align: center;
+}
+.textarea-form{
+    resize: none;
+}
+.sizeIcons-form {
+    font-size: 3rem; color: cornflowerblue;"
+}
+.bg-transparent-dark {
+    background-color: var(--n1-color-transparent);
+}
+/* fin pagina:contacto */
+/* FIN DE LAS PROPIEDADES DE LOS CONTENEDORES */
+
+
+/* PROPIEDADES NAVBAR */
+.bg-color-navbar {
+    background-color: var(--n1-color-nabvar);
+}
+/* FIN DE PROPIEDADES DEL NABVAR */
+
+/* PROPIEDADES DEL CONTADOR tab-pane */
+.bg-contentcolor-tabpane {
+    background-color: var(--n2-color-alt-PR);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.bg-contentcolor-tabpane div  {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* FIN PROPIEDAD TABPANE */
+
+/* BACK TO TOP VERSION 1 */
+/* .back_to_top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+} */
+/* FIN BACK TO TOP VERSION 1 */
+
+/* BACK TO TOP VERSION 2 */
+/* .cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  .cd-top--fade-out { 
+    opacity: .5;
+  } */
+/* FIN BACK TO TOP VERSION 2 */
+
+/* SOCIAL MEDIA */
+.container_socialMedia {
+    position: fixed;
+    bottom: 30%;
+    left: 1px;
+}
+.box_socialMedia {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+    margin: 5px;
+    transition: all .4s;
+}
+.box_socialMedia:hover {
+    width: 150px;
+    background: #c32aa3;
+    border-radius: 10px; 
+    color: white;
+    box-shadow: 0 0 50px #b315917c;
+}
+.box_socialMedia:nth-child(2):hover {
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+} 
+.box_socialMedia:nth-child(3):hover {
+    width: 150px;
+    background: #1da1f2;
+    box-shadow: 0 0 50px #1da0f280;
+}
+.box_socialMedia:nth-child(4):hover {
+    background: #25d366;
+    box-shadow: 0 0 50px #25d3657e;
+}
+.container-fluid .box_socialMedia p {
+    transform: translate(60px);
+}
+.box_socialMedia .icon_socialMedia {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    transition: all .4s;
+}
+.insta_socialMedia {
+    background: #c32aa3;
+}
+.face_socialMedia {
+    background: #1877f2;
+}
+.twitt_socialMedia {
+    background: #1da1f2;
+}
+.wsp_socialMedia {
+    background: #25d366;
+}
+.box_socialMedia:hover .icon_socialMedia {
+    background: white;
+    color: rgb(59, 59, 59);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* FOOTER VERSION 1 */
+#footer {
+    background: var(--n1-color-nabvar);
+    color: #45505b;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+  
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: white;
+}
+
+#footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+    color: white;
+}
+
+#footer a {
+    color: var(--n1-color-alt-PR);
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+}
+  
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--n2-color-alt-PR);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+  
+#footer .social-links a:hover {
+    background: #0678e3;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+#footer .credits {
+    font-size: 13px;
+    color: white;
+}
+/* FIN FOOTER VERSION 1 */
+
+/* PUNTOS RESPONSIVOS */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container-fluid #contacto, #galeria {
+        margin: 9% 0 0 0;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container-fluid #contacto, #galeria {
+        margin: 8% 0 0 0;
+    }
+ }
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container-fluid #contacto, #galeria {
+        margin: 6% 0 0 0;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container-fluid #contacto #galeria {
+        margin: 4% 0 0 0;
+    }
+}
+
+/* There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths. */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .container-fluid #contacto, #galeria {
+        margin: 18% 0 0 0;
+    }
+    #myCarousel .carousel-inner h1{
+        font-size: 27px;
+    }
+    #myCarousel .carousel-inner img {
+        background-size: cover;
+        object-fit: cover;   
+        height: 420px;
+        width: 100%;
+     }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-fluid #contacto, #galeria {
+        margin: 10% 0 0 0;
+    }
+    #myCarousel .carousel-inner img {
+        background-size: cover;
+        object-fit: cover;   
+        height: 350px;
+        width: 100%;
+     }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container-fluid #contacto, #galeria {
+        margin: 8% 0 0 0;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* .container-fluid .row > div {
+    padding: 45px;
+    }  */
+
+    .container-fluid #contacto, #galeria {
+        margin: 6% 0 0 0;
+    }
+    #myCarousel .carousel-inner img {
+        background-size: cover;
+        object-fit: cover;   
+        height: 400px;
+        width: 100%;
+     }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-fluid #contacto, #galeria {
+        margin: 4% 0 0 0;
+        
+    }
+    #myCarousel .carousel-inner img {
+        background-size: cover;
+        object-fit: cover;   
+        height: 500px;
+        width: 100%;
+    }
+}
+/* Fin puntos responsivos */
+
+
+
+
+/* No borrar */
+ /*  ©FanoD3c autor de origen de esta plantilla. Sigueme en instagram: @Fanod3C para mas informacion   */

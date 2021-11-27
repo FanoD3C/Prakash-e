@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <!-- ESTILOS GENERALES -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- CSS PATTERNS BIBLIOOTECA -->
+    <link rel="stylesheet" href="/assets/css/pattern.min.css">
+
+    <!-- BOOTSTRAP 5 / GRID MIN / FOLDER -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap-grid.min.css">
+
+    <!-- BOOTSTRAP 5 / GRID css MIN / FOLDER -->
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap-grid.min.css.map"> -->
+
+    <!-- BOOTSTRAP 5 / reboo CSS MIN / FOLDER -->
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap-reboot.min.css.map"> -->
+
+    <!-- BOOTSTRAP 5 / reboot MIN / FOLDER -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap-reboot.min.css">
+
+    <!-- BOOTSTRAP 5 / bootstrap MIN / FOLDER -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css">
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/boxicon/boxicons.min.css">
+
+    <!-- BOOTRSTRAP ICONS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- GOOGLE FONTS / CDN -->
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+
+    <title>Prakash</title>
+</head>
+
+<body>
+
+    <!-- HEADER / NAV version 1-->
+    <!-- navbar-dark = letras del menu desplegable / bg-dark = para el fondo del navegador / navfil para centrar el listado colapsado  -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-color-navbar">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/img/icon/icon-prakash.png" width="30" height="30" style="margin-right: 5px"
+                class="d-inline-block align-top" alt="">Prakash Natural
+        </a>
+
+        <!-- BUTTON BURGUER -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre_mi">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/view/clienteFront/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+
+                <!-- LISTADO COLAPSADO / DROPDOWN LIST -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Carrito de compras
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+        </div>
+    </nav>
+    <!-- fin HEADER / NAV VERSION 1 -->
+
+    <!-- CONTACT -->
+    <section class="container-fluid">
+        <h1 id="contacto">Contacto</h1>
+        <h2>Cualquier duda o consulta no dudes en contactarnos</h2>
+        <div class="row position-relative contact-form bg-transparent-dark">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-5">
+                <form action="https://formsubmit.co/test.pro.te20@gmail.com" class="w-100 text-white" method="POST">
+                    <h4>Envianos un correo</h4>
+                    <p class="subtitle-form">Ingresa tus datos aqui y te responderemos lo antes posible</p>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">NOMBRE</label>
+                        <input type="text" name="Nombre" class="form-control" id="subject"
+                            placeholder="Ingresa tu nombre" required autofocus>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">EMAIL</label>
+                        <input type="email" name="Correo Electronico" class="form-control" id="email"
+                            placeholder="Tu correo electronico: ejemplo@gmail.com / ejemplo@outlook.es" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">ASUNTO DEL MENSAJE</label>
+                        <input type="text" name="Asunto" class="form-control" id="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control mb-3 textarea-form" name="Mensaje" id="Mensaje" cols="15"
+                            rows="10" placeholder="Ingrese su mensaje aqui" required>
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-lg btn-block ">ENVIAR</button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-3 text-white">
+                <h4>Ubicacion Geografica</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7086.369478218497!2d-70.32395748827888!3d-27.369945360594777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96980476ed3b84e9%3A0x4ac74d3dd972a334!2sPlaza%20de%20Armas%20de%20Copiap%C3%B3!5e0!3m2!1ses-419!2scl!4v1634435370404!5m2!1ses-419!2scl"
+                    width="100%" height="500" style="border:0; border-radius: 25px; padding: 2%;" allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+                <!--  -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-map sizeIcons-form"></i>
+                            </div>
+                            <h4>Direccion</h4>
+                            <p>Salitrera 123, Copiapo, Region de Atacama, Chile</p>
+                        </div>
+                    </div>
+                    <div class="ccol-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-whatsapp sizeIcons-form"></i>
+                            </div>
+                            <h4>Telefono</h4>
+                            <p>+569-7238-9065</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-envelope-fill sizeIcons-form"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>test.pro.te20@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-instagram sizeIcons-form"></i>
+                            </div>
+                            <h4>Red social</h4>
+                            <p>@Fanod3c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN CONTACT -->
+    <!-- SOCIAL MEDIA NO BOOTSTRAP -->
+    <div class="container-fluid">
+        <div class="container_socialMedia">
+            <div class="box_socialMedia">
+                <div class="icon_socialMedia insta_socialMedia">
+                    <i class="bi bi-instagram"> </i>
+                </div>
+                <a style="color: rgb(88, 213, 235);" href="https://www.instagram.com/fanod3c/">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="box_socialMedia">
+                <div class="icon_socialMedia face_socialMedia">
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <p>Facebook</p>
+            </div>
+            <div class="box_socialMedia">
+                <div class="icon_socialMedia twitt_socialMedia">
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <p>Twitter</p>
+            </div>
+            <div class="box_socialMedia">
+                <div class="icon_socialMedia wsp_socialMedia">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+                <a rel="noopener"
+                    href="https://wa.me/+56972389065?text=Hola,%20FanoD3c%20¿Quiero%20realizar%20un%20proyecto%20informatico,%20y%20me%20interesan%20tus%20habilidades,%20estas%20disponible%20para%20hablar?"
+                    target="_blank">
+                    <p>Whatsapp</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- SCROLL TOP / BACK TO TOP -->
+    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- FOOTER VERSION 1 -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Prakash Natural</h3>
+            <p>Entregando</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>FanoD3c</span></strong>. Todos los derechos reservados.
+            </div>
+            <!-- CREDITOS POR CREAR EL SITIO -->
+            <div class="credits">
+                Diseñado con <b>Bootstrap</b> por <a href="https://www.instagram.com/fanod3c/"><b>@FanoD3c</b></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!--  FIN FOOTER VERSION 1 -->
+
+    <!--FOOTER VERSION 2   -->
+
+
+    <!-- FOOTER VERSION 2 -->
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- POPPER.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP 4.1.1 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="/assets/js/backtotop.js"></script>
+    <!-- BOOTRAP BUNDLE -->
+    <!-- <script src="assets/js/bootstrap/js/bootstrap.bundle.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <!-- BOOTRAP BUNDLE -->
+    <!-- <script src="assets/js/bootstrap/js/bootstrap.bundle.js.map" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <!-- BOOTSTRAP JS -->
+    <!-- <script src="assets/js/bootstrap/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <!-- BOOTSTRAP  -->
+</body>
+
+</html>
