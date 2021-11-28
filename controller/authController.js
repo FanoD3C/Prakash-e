@@ -47,7 +47,15 @@ authCtrl.renderIndexRegister = async (req, res) => {
         // console.log(passHash)
         conexion.query('INSERT INTO users SET ?', {user:user, name:name, pass:passHash}, (error, results) => {
             if(error) {console.log(error)}
-            res.redirect('/') 
+            res.render('login/indexRegister', {
+                alert: true,
+                alertTitle: "Registro Okey",
+                alertMessage: "Se han registrado los datos correctamente",
+                alertIcon: 'success',
+                showConfirmButton: false, 
+                timer: 800,
+                ruta: 'login/indexLogin'
+            }) 
         })
     }catch (error) {
         console.log(error)

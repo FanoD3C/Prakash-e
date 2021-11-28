@@ -70,14 +70,14 @@
         Swal.fire({
             title: '{{alertTitle}}',
             text: '{{alertMessage}}',
-            icon: 'warning',
+            icon: 'success',
             showConfirmButton: '{{showConfirmButton}}'
             //posible loop / error
             //timer: '{{timer}}'
-            //icon: 'success'
+            //icon: 'warning'
             
         }).then(()=> {
-                window.location = '/{{ruta}}'
+                window.location = '/adminFront/indexAdmin{{ruta}}'
         })
         
 
