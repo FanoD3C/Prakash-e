@@ -40,6 +40,13 @@ app.use(express.json());
 // TRABAJANDO CON COOKIES
 app.use(cookieParser());
 
+//eliminar cache
+app.use(function (req, res, next){
+    if(!req.user)
+        res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate' )
+    next();
+})
+
 // FAVICON
 // app.use('/favicon.ico', express.static('/icon-prakash.ico'));
 

@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
    
     <!-- CSS IMPORTADO DE PUBLIC -->
-    <link rel="stylesheet" href="../public/assets/css/styleLogin.css"
+    <link rel="stylesheet" href="../public/assets/css/styleLogin.css">
 
     <!-- PATTERN.CSS CDN -->
     <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
@@ -70,20 +70,22 @@
         Swal.fire({
             title: '{{alertTitle}}',
             text: '{{alertMessage}}',
-            icon: 'success',
-            showConfirmButton: '{{showConfirmButton}}'
-            //posible loop / error
-            //timer: '{{timer}}'
-            //icon: 'warning'
+            icon: '{{alertIcon}}',
+            showConfirmButton: '{{alertShowConfirmButton}}',
+            timer: '{{alertTimer}}',
+            footer: '<a class= "text-center"href="">¿Tienes problemas con tu cuenta o quieres cambiar la contraseña?, recuperala haciendola click aqui!! &#128070; </a>'
+            // incrustando codigo html en handlebars y llamando a un elemento desde un archivo js (indexController)
+            //footer: 'document.getElementById({{alertHTML}})'
             
         }).then(()=> {
-                window.location = '/adminFront/indexAdmin{{ruta}}'
+                // button 'Ok' popup sweetalert
+                window.location = '{{alertRuta}}'
+               // location.href = `data/gimmics/gansaid.html`;
         })
         
 
     </script>
-    {{else}}
-    <p>faltan los datos</p>
+    
     
     {{/if}}
     {{> footer}}

@@ -16,7 +16,7 @@ const authCtrl = require('../../controller/authController');
 const router = express.Router();
 
 // definir el controller, para hacer uso de los modulos
-const {renderIndex, renderGaleria, renderContacto, renderIndexLogin, renderIndexRegister} = require('../../controller/authController')
+const {renderIndex, renderGaleria, renderContacto, renderIndexLogin} = require('../../controller/authController')
 
 
 //ROUTER PARA LAS VISTAS
@@ -60,11 +60,18 @@ router.get('/adminFront/indexAdmin', (req, res) => {
     })
 })
 
+//Autenticacion
+router.get('/', authCtrl.isAuth, (req, res)=> {
+    res.render('/', {user:req.user})
+})
+
 //ROUTER PARA LOS METODOS DEL CONTROLADOR
 // .post() -> entre parentesis se debe indicar la ruta del formulario que captura los datos 
 // registerController + loginRegister son los metodos llamados desde -> authController.js
 router.post('/login/indexRegister',authCtrl.renderIndexRegister)
 router.post('/login/indexLogin', authCtrl.renderIndexLogin)
+//llamando al metodo cerrar sesion
+router.get('/logout', authCtrl.IsLogOut)
 
 
 // AL FINAL VA LA VISTA 404 / SI ESTA ANTES DE CUALQUIER FUNCION O LLAMADA ESTA FUNCION 404 PUEDE ALTERAR EL FUNCIONAMIENTO
